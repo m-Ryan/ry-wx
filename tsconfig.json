@@ -25,7 +25,11 @@
     "emitDecoratorMetadata": true,
     "removeComments": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "include": ["src/**/**/*", "typings/*"]
 }
