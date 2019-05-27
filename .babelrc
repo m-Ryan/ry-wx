@@ -1,0 +1,34 @@
+{
+	"presets": [
+
+		[
+			"@babel/env",
+			{
+				"modules": false
+			}
+		],
+		"@babel/preset-typescript",
+	],
+	"plugins": [
+		"lodash",
+		"@babel/plugin-transform-modules-commonjs",
+		[
+
+			"@babel/plugin-transform-runtime",
+			{
+				"corejs": false,
+				"helpers": false,
+				"regenerator": true,
+				"useESModules": false
+			}
+		],
+		["babel-plugin-copy-npm", {
+			"rootDir": "src",
+			"outputDir": "dist",
+			"npmDir": "npm",
+			"format": "cjs",
+			"strict": false,
+			"minify": true
+		}],
+	]
+}
