@@ -6,13 +6,11 @@
     "build": "cross-env NODE_ENV=production gulp"
   },
   "devDependencies": {
-    "@babel/helper-module-transforms": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-transform-modules-commonjs": "^7.4.4",
-    "@babel/plugin-transform-regenerator": "^7.4.5",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-typescript": "^7.3.3",
-    "@babel/template": "^7.4.4",
     "autoprefixer": "^9.5.1",
     "babel-plugin-copy-npm": "^0.1.5",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -38,7 +36,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "@babel/runtime": "^7.4.5",
     "@types/fs-extra": "^7.0.0",
     "@types/lodash": "^4.14.129",
