@@ -7,7 +7,7 @@ module.exports = function clean() {
 		fs.mkdirSync('dist');
 		return Promise.resolve(null);
 	}
-	return del([ '*' ], {
+	return del([ '*', '!npm' ], {
 		force: true,
 		cwd: path.join(cwd, 'dist')
 	});

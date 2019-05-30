@@ -2,3 +2,4 @@ node_modules
 dist
 .history
 yarn-error.log
+.cache-npm
