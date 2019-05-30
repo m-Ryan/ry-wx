@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const { babel } = require('gulp-load-plugins')();
-const uglify = require('gulp-uglify-es').default;
 const path = require('path');
 const cwd = process.cwd();
 module.exports = function compileJs(filePath) {
