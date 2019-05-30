@@ -1,5 +1,6 @@
 import Store from '@/utils/store';
 import { delay } from '@/utils/util';
+import dayjs from 'dayjs';
 
 Page({
 	data: {
@@ -15,16 +16,16 @@ Page({
 		});
 	},
 	async onLoad() {
-		console.log('begin');
+		dayjs().format('YYYY-MM-DD HH:hh:ss');
+		console.log(`这一刻 ${dayjs().format('YYYY-MM-DD HH:hh:ss')}`);
 		wx.showLoading({ title: '加载中' });
-		Store.log();
-		Store.log();
-		Store.log();
-		Store.log();
-		Store.log();
+		Store.log('track');
+		Store.log('track');
+		Store.log('track');
+		Store.log('track');
+		Store.log('track');
 		await delay();
-		console.log('end');
-
 		wx.hideLoading();
+		console.log(`这一刻 ${dayjs().format('YYYY-MM-DD HH:hh:ss')}`);
 	}
 });

@@ -1,7 +1,7 @@
-import { debounce } from '@/utils/debounce';
+import { throttle } from '@/utils/throttle';
 export default class Store {
-	@debounce(2000)
-	static log() {
-		console.log('打日志');
+	@throttle(2000)
+	static log(log: string) {
+		console.log(log);
 	}
 }
